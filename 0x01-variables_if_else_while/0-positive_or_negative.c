@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
 /** 
  *
  *
@@ -31,8 +30,7 @@ else if (n < 0)
 else
 {
   printf("%d is positive\n", n);
-}
-	
+}	
 return (0);
 
 }
