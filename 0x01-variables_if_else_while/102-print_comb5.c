@@ -1,46 +1,34 @@
 /*
  * File: 102-print_comb5.c
- * Auth: Nyange
+ i* Auth: Nyange
  */
 #include <stdio.h>
 
 /**
-  * main - Prints 3 combination of numbers
-  *
-  * Return: Always (Success)
-  */
+ * main - Prints all possible combinations of two two-digit numbers,
+ *        ranging from 0-99, separated by a comma followed by a space.
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int c, i, k, j;
+	int num1, num2;
 
-	for (c = 0; c <= 99; c++)
+	for (num1 = 0; num1 <= 98; num1++)
 	{
-		for (i = 0; i <= 99; i++)
+		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
-			for (k = 0; k <= 99; k++)
-			{
-				for (j = 0; j <=99; j++)
-				{
-					if (((k + j) > (c + i) &&  k >= c) || c < k)
-					{
-						putchar(c);
-						putchar(i);
-						putchar(' ');
-						putchar(k);
-						putchar(j);
+			putchar((num1 / 10) + '0');
+			putchar((num1 % 10) + '0');
+			putchar(' ');
+			putchar((num2 / 10) + '0');
+			putchar((num2 % 10) + '0');
 
-					if (c + i + k + j == 227 && c == 57)
-					{
-					break;
-					}
-					else
-					{
-					putchar(',');
-					putchar(' ');
-					}
-					}
-				}
-			}
+			if (num1 == 98 && num2 == 99)
+				continue;
+
+			putchar(',');
+			putchar(' ');
 		}
 	}
 
@@ -48,4 +36,3 @@ int main(void)
 
 	return (0);
 }
-
