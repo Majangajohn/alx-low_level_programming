@@ -16,10 +16,14 @@ int _islower(int c)
 {
 	if (islower(c))
 	{
+<<<<<<< HEAD
 		return (1);
 	}
 	else
 	{
 		return (0);
+=======
+		return (1);	
+>>>>>>> 85d43cd3fdb6183743afd4069db23af4f194f3cb
 	}
 }
