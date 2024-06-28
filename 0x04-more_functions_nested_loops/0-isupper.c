@@ -9,6 +9,7 @@
 
 /**
  * _isupper - uppercase letters
+ * @c: character to chec
  *
  * Return: 0 or 1
  */
