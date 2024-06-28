@@ -1,3 +1,9 @@
+/* FILE: 0-isupper.c
+ * Auth: Nyange
+ */
+
+#include <ctype.h>
+#include <stldib.h>
 #include "main.h"
 
 /**
