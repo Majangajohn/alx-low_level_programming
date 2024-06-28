@@ -1,7 +1,7 @@
 /*
-* FILE: 0-isupper.c
-* Auth: Nyange
-*/
+ * FILE: 0-isupper.c
+ * Auth: Nyange
+ */
 #include <ctype.h>
 #include <stdlib.h>
 #include "main.h"
