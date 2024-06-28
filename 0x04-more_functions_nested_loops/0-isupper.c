@@ -3,7 +3,7 @@
  */
 
 #include <ctype.h>
-#include <stldib.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
