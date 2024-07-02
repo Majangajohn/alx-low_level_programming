@@ -1,5 +1,5 @@
 /*
- * FILE: 8-print_array.c 
+ * FILE: 8-print_array.c
  * @Auth: Nyange
  *
  */
