@@ -18,7 +18,7 @@ int _atoi(char *s)
 {
 	while (*s)
 	{
-		if (	isdigit(*s) ||
+		if (isdigit(*s) ||
 			(*s == '-' && isdigit(*(s + 1))) ||
 			(*s == '+' && isdigit(*(s +1)))
 		)
