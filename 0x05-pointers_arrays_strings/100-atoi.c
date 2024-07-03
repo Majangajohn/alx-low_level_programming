@@ -5,7 +5,7 @@
  */
 
 #include "main.h"
-#include <stdlib.h> 
+#include <stdlib.h>
 #include <ctype.h>
 /**
  * _atoi - converts a string to an integer
@@ -18,7 +18,7 @@ int _atoi(char *s)
 {
 	while (*s)
 	{
-		if (	isdigit(*s) ||
+		if (isdigit(*s) ||
 			(*s == '-' && isdigit(*(s + 1))) ||
 			(*s == '+' && isdigit(*(s +1)))
 		)
