@@ -3,7 +3,7 @@
  * @Auth: Nyange
  */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * string_toupper - Change all lowercase letters to uppercase
