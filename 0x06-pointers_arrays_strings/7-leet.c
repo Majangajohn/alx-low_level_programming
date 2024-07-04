@@ -3,7 +3,7 @@
  * @Auth: Nyange`
  */
 
-include "main.h"
+#include "main.h"
 
 /**
  * leet - encode string to 1337
