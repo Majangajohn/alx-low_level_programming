@@ -4,8 +4,6 @@
  */
 
 #include "main.h"
-#include <string.h>
-
 /**
 *_strstr - The _strstr() function finds the first occurrence
 * of the substring needle in the string haystack.
@@ -18,14 +16,24 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *result = strstr(haystack, needle);
+	int i;
 
-	if (result != NULL)
+	if (*needle == 0)
+		return (haystack);
+
+	while (*haystack)
 	{
-		return (result);
+		i = 0;
+
+		if (haystack[i] == needle[i])
+		{
+			do {
+				if (needle[i + 1] == '\0')
+					return (haystack);
+				i++;
+			} while (haystack[i] == needle[i]);
+		}
+		haystack++;
 	}
-	else
-	{
-		return (NULL)
-	}
+	return ('\0');
 }
