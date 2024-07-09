@@ -21,7 +21,7 @@
 char *_strpbrk(char *s, char *accept)
 {
 	char *result = strpbrk(s, accept);
-	
+
 	if (result != NULL)
 	{
 		return (result);
