@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * main - main execution takes place 
+ * main - main execution takes place
  * @argc: The size of the argv array.
  * @argv: An array containing the program command line arguments
  *
