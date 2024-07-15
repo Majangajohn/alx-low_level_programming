@@ -1,12 +1,7 @@
-/*
- * FILE: 3-mul.c
- * @Auth: Nyange
- */
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - main execution take splace here
+ * main - main code execution 
  * @argc: The size of the argv array.
  * @argv: An array containing the program command line arguments
  *
