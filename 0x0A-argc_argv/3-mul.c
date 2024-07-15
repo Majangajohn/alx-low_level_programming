@@ -2,7 +2,7 @@
  * FILE: 3-mul.c
  * @Auth: Nyange
  */
-#include "main."
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 /**
