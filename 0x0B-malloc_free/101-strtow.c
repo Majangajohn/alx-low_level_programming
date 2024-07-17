@@ -3,6 +3,7 @@
  * @Auth: Nyange
  */
 
+
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
@@ -17,44 +18,22 @@
 
 char **strtow(char *str)
 {
-	char *piece, **str_arr = NULL, *str_cpy = NULL;
-	int i = 0, *number_of_words;
+	char *array = NULL;
+	unsigned int i = 0, j = 0, k;
 
-	if (str == NULL)
-	{
+	if (strncmp(str, "", 1) || str == NULL)
 		return (NULL);
+	array = malloc((i + j + 1) * sizeof(char));
+	if (array == NULL)
+		return (NULL);
+	for (k = 0; k < i; k++)
+		array[k] = str[k];
+	i = k;
+	for (k = 0; k < j; k++)
+	{
+		array[i] = str[k];
+		i++;
 	}
-
-	number_of_words = strlen(str);
-	str_cpy = strdup (str);
-	piece = strtok(str_cpy, " ");
-    while (piece != NULL)
-    {
-        if ((*piece) == '\n')
-        {
-            piece = strtok(NULL, " ");
-            continue;
-        }
-        (*number_of_words)++;
-        piece = strtok(NULL, " ");
-    }
-
-    str_arr = (char **)malloc(sizeof(char *) * (*number_of_words));
-    piece = strtok(str, " ");
-    for (i = 0; piece != NULL; i++)
-    {
-        if ((*piece) == '\n')
-        {
-            piece = strtok(NULL, " ");
-            continue;
-        }
-        str_arr[i] = (char *)malloc(sizeof(char) * (strlen(piece) + 1));
-        strcpy(str_arr[i], piece);
-        piece = strtok(NULL, " ");
-    }
-
-    if (str_cpy)
-        free (str_cpy);
-
-    return (str_arr);
+	array[i] = '\0';
+	return (NULL);
 }
