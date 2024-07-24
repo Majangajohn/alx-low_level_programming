@@ -1,8 +1,3 @@
-/*
- * FILE: 0-print_name.c
- * @Auth: Nyange
- */
-
 #include "function_pointers.h"
 
 /**
