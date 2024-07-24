@@ -10,12 +10,19 @@
  * @array: array of integers
  * @size: size of array
  * @action: function pointer
+ *
+ * Return: Nothing
  */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	size_t i;
 
-	for (i = 0; i < size; i++)
-		action(array[i]);
+	if (array != NULL && action != NULL && size > 0)
+	{
+		for (i = 0; i < size; i++)
+		{
+			action(array[i]);
+		}
+	}
 }
